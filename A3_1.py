@@ -9,3 +9,27 @@ Student #: 20157203
 Date: 
 
 """
+
+# main() function takes care of running the program
+def main():
+    try:
+        lower = int(input("Please enter the lower bound: ")) # Ask the user for the lower bound 
+        upper = int(input("Please enter the upper bound: "))
+    except ValueError:
+        print("Please input an integer.")
+        
+
+    while lower <= upper:
+        mid = (upper + lower)//2 
+        a = input(f"Is your number greater than {mid} (Y/N)? ")
+        
+        if a in ["y", "Y", "yes", "Yes"]:
+            lower = mid + 1
+        else: 
+            upper = mid - 1
+
+    print(f"The number you had in mind was {mid}")     
+        
+    return 0
+
+main() # main() call to start the program

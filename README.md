@@ -1,4 +1,4 @@
-# Assignment 3 for CISC 121
+# Assignment 3 CISC 121
 A3_1 Binary search 
 
 Write a program that determines an integer value the user had in mind. Your program first asks the user to enter the lower and upper bounds of the range that the integer belongs to, and then presents a series of questions “Is the number greater than x?” with yes/no answers to the user in order to determine the integer value that the user had in mind. 
